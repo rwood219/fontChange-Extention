@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Font_Changer",
+    "version": "1.0",
+    "description": "Description of your extension",
+    "background": {
+        "scripts": ["background.js"]
+    },  
+    "browser_action": {
+      "default_icon": {
+        "48": "icon.png"
+      },
+      "default_popup": "index.html"
+    },
+    "web_accessible_resources": ["index.html", "Styles.css", "main.js"],
+    "icons": {
+      "48": "icon.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+      ],
+      
+    "permissions": [
+      "activeTab"
+    ]
+  }
+  
