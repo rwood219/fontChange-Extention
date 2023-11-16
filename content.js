@@ -41,7 +41,7 @@ function changeColor() {
   currentFontSize += 0.1;
 
   // Apply the new font size to the body element
-  document.body.style.fontSize = currentFontSize + "em";
+  document.body.style.fontSize = currentFontSize + "px";
 
   console.log("Font size increased to:", currentFontSize);
 }
