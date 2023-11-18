@@ -1,10 +1,20 @@
 /* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #312f2f;
     text-align: center;
   }
-  
+
+  .main-container {
+    display: grid;
+    background-color: aquamarine;
+  }
+
+  button {
+    opacity: 80%;
+    border-radius: 25%;
+  }
+
   h1 {
     color: #3498db;
   }
