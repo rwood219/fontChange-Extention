@@ -25,3 +25,11 @@ document.getElementById("clear").addEventListener("click", () => {
       browser.tabs.sendMessage(tabs[0].id, { action: "clear" });
     });
 });
+
+document.getElementById("decreaseFontBtn").addEventListener("click", () => {
+  browser.tabs
+    .query({ active: true, currentWindow: true })
+    .then(function (tabs) {
+      browser.tabs.sendMessage(tabs[0].id, { action: "decreaseFontSize" });
+    });
+});
